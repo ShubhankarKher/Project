@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Outfit Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌤️</text></svg>">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Weather <span>Outfit</span> Guide</h1>
+            <p>Dress your best for any weather</p>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="weather-input">
+            <h2>What's your weather today?</h2>
+            <p class="weather-description">
+                Your outfit can make or break your day. Select your current weather condition below, and we'll recommend the perfect outfits, accessories, fragrances, and color combinations to help you look and feel your best no matter what Mother Nature has in store.
+            </p>
+            <div class="weather-options">
+                <div class="weather-option" data-weather="hot">
+                    <i class="fas fa-sun"></i>
+                    <p>Hot</p>
+                    <span class="temp-range">27°C+ / 80°F+</span>
+                </div>
+                <div class="weather-option" data-weather="warm">
+                    <i class="fas fa-cloud-sun"></i>
+                    <p>Warm</p>
+                    <span class="temp-range">20-26°C / 68-79°F</span>
+                </div>
+                <div class="weather-option" data-weather="cool">
+                    <i class="fas fa-cloud"></i>
+                    <p>Cool</p>
+                    <span class="temp-range">10-19°C / 50-67°F</span>
+                </div>
+                <div class="weather-option" data-weather="cold">
+                    <i class="fas fa-snowflake"></i>
+                    <p>Cold</p>
+                    <span class="temp-range">Below 10°C / Below 50°F</span>
+                </div>
+                <div class="weather-option" data-weather="rainy">
+                    <i class="fas fa-cloud-rain"></i>
+                    <p>Rainy</p>
+                    <span class="temp-range">Any temperature</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="results" id="resultsSection">
+            <div class="no-selection">
+                <i class="fas fa-hand-pointer"></i>
+                <p>Select your weather above to get outfit recommendations</p>
+            </div>
+            
+            <!-- Results will be populated by JavaScript -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Weather Outfit Guide</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="chatbot.js"></script>
+</body>
+</html> 
